@@ -1,6 +1,18 @@
 # Running the example searches
 
-Run these commands from the repository root in an **x64 Native Tools Command Prompt for Visual Studio 2022**. Both inputs use one-based coordinate supports.
+Run these commands from the repository root in an **x64 Native Tools Command Prompt for Visual Studio 2022**. The input seeds use one-based coordinate supports.
+
+## ATS 1 (Augmenting Trade Search)
+
+This archived standalone C# extraction contains the original shared-reservoir search and its v2 extension. The command below selects v1 by using a single reservoir. It requires the .NET 9 SDK and restores offline.
+
+~~~bat
+dotnet restore src/ats1/Ats.csproj --configfile src/ats1/NuGet.Config
+dotnet build src/ats1/Ats.csproj -c Release --no-restore
+dotnet src/ats1/bin/Release/net9.0/ats.dll search --input examples/seeds/a27.6.5.261.txt --n 27 --d 6 --w 5 --reservoir 27 --max-results 9 --solutions-per-candidate 9 --output result.txt
+~~~
+
+From the 261-word seed, the first output (result.1.txt) reproduces the August 22 certificate’s 262 codewords, with minimum distance six. [Seed](seeds/a27.6.5.261.txt) · [August certificate](../checkpoints/2026-08-22/a27.6.5.262.txt) · [Solver source](../src/ats1/Program.cs)
 
 ## ATS 4.8 HALO + ACPS
 

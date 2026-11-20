@@ -4,7 +4,7 @@
 
 101 binary certificates improve lower bounds in the project's 2026-11-18 snapshot of A. E. Brouwer's table [\[1\]](https://aeb.win.tue.nl/codes/Andw.html). Nine attain the matching upper bound. Gain is the number of additional codewords. Each certificate contains one length-$n$ binary word per line, with weight $w$ and pairwise Hamming distance at least $d$.
 
-[ATS 4.8 and exact-link build and run instructions](examples/README.md) · [ATS 4.9 C++ source](src/ats49_pressure.cpp)
+[ATS 1, ATS 4.8 and exact-link build and run instructions](examples/README.md) · [ATS 4.9 C++ source](src/ats49_pressure.cpp)
 
 Kiermaier, Krčadinac, and Wassermann’s published Steiner design gives $A(42,8,6)=574$ and served as our starting code for several entries below, including the 492-word length-41 closeout [\[2\]](https://doi.org/10.1007/s10623-026-01888-w).
 
@@ -26,13 +26,13 @@ Kiermaier, Krčadinac, and Wassermann’s published Steiner design gives $A(42,8
 
 | Certificate | Previous lower bound | Size | Gain | Notes |
 |---|---:|---:|---:|---|
-| [A(56,8,7)](checkpoints/2026-11-20/a56.8.7.5899.txt) | 4,685 | 5,899 | +1,214 | Link reconstruction · Previous bound (Pliny the Liberator) [\[1\]](https://aeb.win.tue.nl/codes/Andw.html) |
+| [A(56,8,7)](checkpoints/2026-11-20/a56.8.7.5899.txt) | 4,685 | 5,899 | +1,214 | Exact-link reconstruction · Previous bound (Pliny the Liberator) [\[1\]](https://aeb.win.tue.nl/codes/Andw.html) |
 | [A(57,8,7)](checkpoints/2026-11-20/a57.8.7.6023.txt) | 5,027 | 6,023 | +996 | Exact-link reconstruction |
-| [A(44,8,8)](checkpoints/2026-11-20/a44.8.8.7515.txt) | 6,622 | 7,515 | +893 | Link reconstruction |
-| [A(43,8,8)](checkpoints/2026-11-20/a43.8.8.6248.txt) | 5,418 | 6,248 | +830 | Link reconstruction |
+| [A(44,8,8)](checkpoints/2026-11-20/a44.8.8.7515.txt) | 6,622 | 7,515 | +893 | Exact-link reconstruction |
+| [A(43,8,8)](checkpoints/2026-11-20/a43.8.8.6248.txt) | 5,418 | 6,248 | +830 | Exact-link reconstruction |
 | [A(55,8,7)](checkpoints/2026-11-20/a55.8.7.5224.txt) | 4,426 | 5,224 | +798 | Exact-link reconstruction · Previous bound (Pliny the Liberator) [\[1\]](https://aeb.win.tue.nl/codes/Andw.html) |
-| [A(45,8,8)](checkpoints/2026-11-20/a45.8.8.8137.txt) | 7,391 | 8,137 | +746 | Link reconstruction |
-| [A(58,8,7)](checkpoints/2026-11-20/a58.8.7.6206.txt) | 5,613 | 6,206 | +593 | Link reconstruction · Previous bound (Jordan Boisclair) [\[1\]](https://aeb.win.tue.nl/codes/Andw.html) |
+| [A(45,8,8)](checkpoints/2026-11-20/a45.8.8.8137.txt) | 7,391 | 8,137 | +746 | Exact-link reconstruction |
+| [A(58,8,7)](checkpoints/2026-11-20/a58.8.7.6206.txt) | 5,613 | 6,206 | +593 | Exact-link reconstruction · Previous bound (Jordan Boisclair) [\[1\]](https://aeb.win.tue.nl/codes/Andw.html) |
 | [A(54,8,7)](checkpoints/2026-11-20/a54.8.7.4728.txt) | 4,193 | 4,728 | +535 | Exact-link reconstruction · Previous bound (Pliny the Liberator) [\[1\]](https://aeb.win.tue.nl/codes/Andw.html) |
 | [A(46,8,8)](checkpoints/2026-11-20/a46.8.8.9136.txt) | 8,747 | 9,136 | +389 | Neighbor-code derivation |
 | [A(27,4,6)](checkpoints/2026-11-20/a27.4.6.12540.txt) | 12,285 | 12,540 | +255 | ATS 4.8 · Previous bound (Arhan Canli) [\[1\]](https://aeb.win.tue.nl/codes/Andw.html) |
@@ -45,7 +45,7 @@ Kiermaier, Krčadinac, and Wassermann’s published Steiner design gives $A(42,8
 | [A(40,8,6)](checkpoints/2026-11-20/a40.8.6.420.txt) | 338 | 420 | +82 | Shorten the published Steiner design on 2 zero coordinates [\[2\]](https://doi.org/10.1007/s10623-026-01888-w) · Previous bound (Guan-Ying Huang) [\[1\]](https://aeb.win.tue.nl/codes/Andw.html) |
 | [A(46,8,6)](checkpoints/2026-11-20/a46.8.6.602.txt) | 527 | 602 | +75 | Exact-link exchanges, ATS and conflict-pair splitting · Previous bound (Guan-Ying Huang) [\[1\]](https://aeb.win.tue.nl/codes/Andw.html) |
 | [A(59,8,7)](checkpoints/2026-11-20/a59.8.7.6438.txt) | 6,366 | 6,438 | +72 | Exact-link reconstruction · Previous bound (Jordan Boisclair) [\[1\]](https://aeb.win.tue.nl/codes/Andw.html) |
-| [A(42,8,8)](checkpoints/2026-11-20/a42.8.8.5204.txt) | 5,136 | 5,204 | +68 | Link reconstruction |
+| [A(42,8,8)](checkpoints/2026-11-20/a42.8.8.5204.txt) | 5,136 | 5,204 | +68 | Exact-link reconstruction |
 | [A(51,8,6)](checkpoints/2026-11-20/a51.8.6.791.txt) | 728 | 791 | +63 | Continuation · Previous bound (Guan-Ying Huang) [\[1\]](https://aeb.win.tue.nl/codes/Andw.html) |
 | [A(50,8,6)](checkpoints/2026-11-20/a50.8.6.763.txt) | 705 | 763 | +58 | Previous bound (Jordan Boisclair) [\[1\]](https://aeb.win.tue.nl/codes/Andw.html) |
 | [A(49,8,6)](checkpoints/2026-11-20/a49.8.6.740.txt) | 687 | 740 | +53 | ATS 4.9 · Previous bound (Guan-Ying Huang) [\[1\]](https://aeb.win.tue.nl/codes/Andw.html) |
@@ -119,6 +119,11 @@ Kiermaier, Krčadinac, and Wassermann’s published Steiner design gives $A(42,8
 | [A(62,10,6)](checkpoints/2026-11-20/a62.10.6.115.txt) | 114 | 115 | +1 | Group-orbit block packing |
 | [A(62,12,7)](checkpoints/2026-11-20/a62.12.7.80.txt) | 79 | 80 | +1 | Projective-plane restriction |
 
+
+## Earlier checkpoints
+
+- [August 30, 2026 · 90 codes](checkpoints/2026-08-30/README.md)
+- [August 22, 2026 · 18 codes](checkpoints/2026-08-22/README.md)
 
 ## References
 
